@@ -55,10 +55,11 @@ Before you continue with this lab, here is a recap on what has been done/complet
 ..  image:: ./_static/class5-1-0-0.png
 
 .. attention:: 
+
+   Depends on availability of LLMaaS. Please use one of the option provided by instructor to proceed with the lab.
+
    - Option 1 - LLM as a Service
    - Option 2 - Self-Hosted LLM (ollama) on CPU on UDF
-
-   Depends on availability of LLMaaS. Please use one of the option provided by instructor above to proceed with the lab.   
 
 
 Lets review the Arcadia RAG chatbot which you can access from the Windows Jumphost.
@@ -212,15 +213,15 @@ Scanners screen allow administrator to use existing in-built scanner or creatre 
 
 - GenAI Scanner
   
-  A GenAI Scanner is an AI-powered security tool that understands the intent and context of prompts and responses to flag or block unauthorized content. Unlike traditional pattern-based scanners, it detects contextual risks such as sensitive data exposure, political references, or security bypass attempts. Using adaptive AI, it offers features like data leak prevention, prompt injection defense, and automated security checks. It can be customized to scan prompts, responses, or both, ensuring flexible and effective protection for sensitive information and compliance.
+  A GenAI Scanner is an AI-driven security tool that analyzes the intent and context of prompts and responses to detect risks like data leaks, political mentions, or security bypass attempts. Unlike pattern-based scanners, it uses adaptive AI for contextual detection and supports prompt injection defense, data leak prevention, and automated checks. It can be tailored to scan prompts, responses, or both for flexible protection and compliance.
 
 - Keyword Scanner
 
-  A Keyword Scanner scans text for specific keywords you configure and can block, flag, or redact any content that contains those keywords. This type of scanner is ideal for detecting easily defined terms, such as proprietary product codes, confidential project names, or keywords related to sensitive information. You can set the scanner to look for keywords in prompts, responses, or both, and you can specify multiple keywords and tags for better organization. Keyword scanners are easy to customize to meet different business needs and are particularly useful when you know the exact terms you want to monitor or restrict.
+  A Keyword Scanner detects and blocks, flags, or redacts text containing specific configured keywords. It’s ideal for identifying defined terms like product codes or confidential names and can scan prompts, responses, or both. Easily customizable, it supports multiple keywords and tags for organized, targeted monitoring.
 
 - Regex Scanner
   
-  A Regex scanner scans text using regular expressions (regex), which are powerful search patterns that allow you to block, flag, or redact content that matches highly specific and predictable patterns—like email addresses, URLs, or custom data formats. Regex scanners are best when you need precise control over exactly what is detected. You configure the pattern, and the scanner checks prompts, responses, or both, depending on your needs. For example, you could block any prompt containing a string that looks like an email address.
+  A Regex Scanner uses regular expressions to detect and block, flag, or redact text matching specific patterns like emails, URLs, or custom data formats. It offers precise control and can scan prompts, responses, or both based on configuration
 
 
 F5 AI Guardrails scanners help keep organization AI models secure, compliant, and tailored to your organization's needs
