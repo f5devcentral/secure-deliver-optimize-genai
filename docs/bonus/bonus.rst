@@ -7,7 +7,7 @@ F5 AI Guardrails is a comprehensive platform designed to help organizations secu
 
 .. raw:: html
 
-       <iframe width="700" height="410" src="https://youtu.be/FCZ_UpDBoT8?si=iaRYCqxanujwcYtd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FCZ_UpDBoT8?si=vibKSUOU_3ah8c8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 |
@@ -21,7 +21,7 @@ F5 AI Red Team is a specialized tool within the F5 AI platform that focuses on i
 
 .. raw:: html
 
-       <iframe width="700" height="410" src="https://youtu.be/ib_4OEN1KSk?si=BLIw0es7WlFFVKCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ib_4OEN1KSk?si=AK8yXL-E504yKbQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 |
