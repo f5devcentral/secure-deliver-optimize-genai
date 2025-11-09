@@ -29,7 +29,7 @@ F5 AI Guardrails is a solution aimed at securing AI models and agents in product
 - data security
 - and governance/compliance
 
-What are the main Capabilities?
+What are the main capabilities?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Protect against adversarial threats such as prompt-injection and jailbreaks by applying preset or custom policies. 
