@@ -71,12 +71,12 @@ RDP to access Windows10 Jumphost.
 .. attention:: 
    Some user workstations do not permit outbound RDP. If RDP is not working, use the HTTP KASM Jumphost. Instructions here: https://clouddocs.f5.com/training/community/genai/html/prerequisite/prerequisite.html#kasm-desktop 
 
-Windows 10 RDP login password can be obtained as following
+Windows 11 RDP login password can be obtained as following
 
 ..  image:: ../_static/intro/intro-6.png
 
 
-Window 10 Jumphost
+Window 11 Jumphost
 
 ..  image:: ../_static/intro/intro-7.png
 
