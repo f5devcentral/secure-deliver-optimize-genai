@@ -54,6 +54,12 @@ Before you continue with this lab, here is a recap on what has been done/complet
 
 ..  image:: ./_static/class5-1-0-0.png
 
+.. attention:: 
+   - Option 1 - LLM as a Service
+   - Option 2 - Self-Hosted LLM (ollama) on CPU on UDF
+
+   Depends on availability of LLMaaS. Please use one of the option provided by instructor above to proceed with the lab.   
+
 
 Lets review the Arcadia RAG chatbot which you can access from the Windows Jumphost.
 
