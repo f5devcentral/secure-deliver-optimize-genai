@@ -1,15 +1,15 @@
-Class 6: LLM Red Teaming
-========================
+Class 6: AI Red Team
+====================
 
 ..  image:: ./_static/mission6.png
 
 
 .. NOTE::
-       AI governance itself is a huge topic. Hence, we will only focus on the technical controls such as LLM Red Teaming.
+       AI governance itself is a huge topic. Hence, we will only focus on the technical controls such as AI Red Team.
 
 
 .. NOTE::
-       No hands on lab for this class partly due to extensive resources required for scanning an LLM. Demo and discussion will be conducted in class.
+       No hands on lab for this class partly due to extensive resources required for scanning an AI apps / LLM. Demo and discussion will be conducted in class.
        
 
 
@@ -32,20 +32,31 @@ Focus on preventing unintended harm caused by the AI services, ensuring it opera
 Focus to secure AI services from external threats like cyberattack and data breach, safeguarding the confidentiality and integrity of the AI services. General framework that address this is OWASP Top 10 for LLM, MITRE ATLAS ( Adversarial Threat Landscape for Artificial Intelligence System) - Protecting AI system use by human.
 
 
-What is LLM Red Teaming?
-~~~~~~~~~~~~~~~~~~~~~~~~
-Red teaming for Large Language Models (LLMs) is the practice of systematically testing these AI systems to identify potential vulnerabilities, risks, and failure modes. It's similar to cybersecurity red teaming - defensive (blue) vs offensive(red), but focused specifically on finding ways LLMs might breaks or compromised.
 
-F5 LLM Red Teaming Solution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Here are some of the example reports shown on F5XC Web App Scanning on LLM Discovery.
+What is F5 AI Red Team?
+~~~~~~~~~~~~~~~~~~~~~~~
 
-..  image:: ./_static/class6-1.png
+F5 AI Red Team tool is designed to help organizations proactively test and secure their AI applications, models and agents. It enables teams to simulate adversarial attacks, such as prompt injections and jailbreaks - at high scale and speed, to uncover potential risks, vulnerabilities in AI systems. It's similar to cybersecurity red teaming - defensive (Red) vs offensive (Blue), but focused specifically on finding ways AI apps might breaks or compromised.
 
-|
-|
+Key offering includes:-
 
-..  image:: ./_static/class6-2.png
+- A large and constantly updated threat-library and attack-agent swarm for testing existing and emerging AI vulnerabilities
+- Continuous assessment capabilities so defenses evolve as AI threats evolve, across pilot to production environments
+- Real-world scenario testing where it leverage 10,000+ monthly attack prompts and detailed “agentic fingerprint” insights (exploit paths, chain of reasoning)
+
+
+
+..  image:: ./_static/class6-redteam-1.png
+
+..  image:: ./_static/class6-redteam-2.png
+
+..  image:: ./_static/class6-redteam-3.png
+
+..  image:: ./_static/class6-redteam-4.png
+
+..  image:: ./_static/class6-redteam-4-1.png
+
+
 
 |
 |

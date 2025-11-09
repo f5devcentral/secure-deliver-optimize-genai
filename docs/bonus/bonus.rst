@@ -1,87 +1,28 @@
 Bonus: GenAI Demo Videos
 ========================
 
-F5 AI Gateway
--------------
+F5 AI Guardrails
+----------------
+F5 AI Guardrails is a comprehensive platform designed to help organizations securely deploy and manage generative AI applications. It provides a suite of tools and features that enable users to create, monitor, and enforce policies around the use of AI models, ensuring compliance with organizational standards and regulatory requirements. Key capabilities include content filtering, prompt management, user access controls, and real-time monitoring of AI interactions. By leveraging F5 AI Guardrails, organizations can mitigate risks associated with generative AI, such as data leakage, inappropriate content generation, and misuse of AI capabilities, while optimizing the performance and reliability of their AI deployments.
 
-Identity Aware Model Routing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. raw:: html
 
-Demonstrate the capability of F5 AI Gateway to dynamically apply and steer LLM traffic policy according to user identity based on JSON Web Token (JWT) or header.
+       <iframe width="700" height="410" src="https://youtu.be/FCZ_UpDBoT8?si=iaRYCqxanujwcYtd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+|
+|
+
+F5 AI Red Team
+--------------
+
+F5 AI Red Team is a specialized tool within the F5 AI platform that focuses on identifying and mitigating vulnerabilities in generative AI applications. It simulates adversarial attacks, such as prompt injections and jailbreaks, to uncover potential risks and weaknesses in AI systems. By leveraging a large and constantly updated threat library, F5 AI Red Team enables organizations to proactively test their AI models against emerging threats, ensuring robust security measures are in place. This tool is essential for organizations looking to safeguard their AI deployments from malicious exploitation while maintaining compliance with security standards.
 
 
 .. raw:: html
 
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/nl0AmeaXaEY?si=btsimVq7SZFrJFRv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="700" height="410" src="https://youtu.be/ib_4OEN1KSk?si=BLIw0es7WlFFVKCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-|
-|
-
-Language and Code Detection Routing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Demonstrate the capability of F5 AI Gateway to detect type of language input and steer according to the defined language model for better user experience and cost optimization. It also demonstrate code detection and steer the traffic to a local self-hosted model to prevent any unintentional code leakage to a SaaS-Managed model.
-
-
-.. raw:: html
-
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/ySp6EnY89PU?si=0ubsYF7Ov16mMvW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-|
-|
-
-System Prompt Enforcement (Guardrail)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Showcase the system prompt capabilities of the F5 AI Gateway (AI GW) to ensure conversations remain contextually relevant. The AI Gateway enforces strict guardrails to prevent users from deviating from the intended purpose of the chatbot. This helps maintain the integrity of the system while preventing the misuse of AI resources
-
-
-.. raw:: html
-
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/ZVzeQKUhs-4?si=euEMuhpkc8VblE4P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-|
-|
-
-
-OWASP Top 10 LLM01 - Prompt Injection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Showcase Prompt Injection processor to address few key concern raised in OWASP TOP 10 for LLM apps especially on Prompt Injection concern. (LLM01)
-
-
-.. raw:: html
-
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/fXnu1JmqcgA?si=RWPFX65n-LYLEq4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-|
-|
-
-OWASP Top 10 LLM02 - Sensitive Information Disclosure (PII)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Showcase PII Redactor processor to address key concern raise on sensitive information disclosure raise in OWASP TOP 10 for LLM apps (LLM02)
-
-
-.. raw:: html
-
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/1n-du-D-4IQ?si=X_sT7BIL9FVLge8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-|
-|
-
-
-OWASP Top 10 LLM07 - System Prompt Leakage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Showcase System Prompt processor to address key concern raise on system prompt leakage raise in OWASP TOP 10 for LLM apps (LLM07)
-
-.. raw:: html
-
-       <iframe width="700" height="410" src="https://www.youtube.com/embed/gfeyP5aTdDc?si=T1uhNtUQ2oADrC7f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 |
