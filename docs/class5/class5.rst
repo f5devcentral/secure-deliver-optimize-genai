@@ -662,6 +662,9 @@ Logs shown that the PII data is redacted successfully.
 
 .. image:: ./_static/class5-pii-08.png
 
+The Nginx connector logs also shown that the PII data is redacted successfully.
+
+.. image:: ./_static/class5-pii-08-1.png
 
 Example of a regex only matches if not f5.com email domain. Hence, only non f5.com email will be redacted. f5.com domain will not be redacted.
 
