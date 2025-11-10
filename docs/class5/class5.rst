@@ -576,6 +576,9 @@ If you are using different LLM provider, please update accordingly.
 
 Deploy the Nginx AI Guardrails connector pod.
 
+.. Attention:: 
+   
+   This Nginx NJS connector script is provided as-is for educational purpose only. As of this writting, its not officially deliver as part of F5 AI Guardrails stack. For production deployment, please harden the Nginx connector accordingly before deploying to production environment.
 
 .. code-block:: bash
 
@@ -649,14 +652,18 @@ Example test prompt.
 
 As expected shown above, F5 AI Guardrails blocks the prompt that violated the scanner policy.
 
+Example terminal logs shown that Nginx connector is able to extract the prompt and response to F5 AI Guardrails for scanning.
 
 .. image:: ./_static/class5-oob-08.png
+
+Example shown that F5 AI Guardrails is able to block the prompt that violated the scanner policy.
 
 .. image:: ./_static/class5-oob-09.png
 
 Update F5 AI Guardrails policy to redact PII data.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go to **Projects** and select your own project. Click **Add Scanners** to add **Corporate guardrails package** to your project. Please notes that **Corporate guardrails package** contains PII redaction scanner.
+Go to **Projects** and select your own project. Click **Add Scanners** to add **Corporate guardrails package** to your project. Please notes that **Corporate guardrails package** contains PII redaction scanner. Please notes that **Corporate guardrails package** is a custom build scanner package provided for this class. Its not part of the in-built scanner packages.
 
 .. image:: ./_static/class5-pii-01.png
 
@@ -672,11 +679,11 @@ You have to enable each scanner manually from Block to Redact.
 
 .. image:: ./_static/class5-pii-04.png
 
-Now, you can validate the PII Redaction scanner is able to redact PII data from FlowiseAI chatbot. As shown below, sensitive PII data are redacted successfully - except email address (based on regex policy)
+Now, you can validate the PII Redaction scanner is able to redact PII data from FlowiseAI chatbot. As shown below, sensitive PII data are redacted successfully - except email address (intentional based on custom regex policy)
 
 .. image:: ./_static/class5-pii-05.png
 
-Alternatively, you can also validate from Arcadia Financial modern app chatbot. Similarly, sensitive PII data are redacted successfully - except email address (based on regex policy)
+Alternatively, you can also validate from Arcadia Financial modern app chatbot. Similarly, sensitive PII data are redacted successfully - except email address (intentional based on custom regex policy)
 
 .. image:: ./_static/class5-pii-06.png
 
@@ -693,7 +700,9 @@ The Nginx connector logs also shown that the PII data is redacted successfully.
 
 .. image:: ./_static/class5-pii-08-1.png
 
-Example of a regex only matches if not f5.com email domain. Hence, only non f5.com email will be redacted. f5.com domain will not be redacted.
+In this example, the regex is designed to match only email addresses that are not from the f5.com domain. As a result, only non-f5.com email addresses will be redacted, while f5.com addresses remain visible.
+
+This behavior is intentional. This to prevents the AI agent from sending emails to external domains. If the AI agent receives an instruction to send an email to an unknown or external address (perhaps due to manipulation), the address will be redacted, causing the operation to fail.  
 
 .. image:: ./_static/class5-pii-09-no-org-email.png
 
