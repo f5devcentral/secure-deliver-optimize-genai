@@ -51,7 +51,7 @@ As organizations deploy more AI models and agents, the attack surface expands. F
 Recap when starting at Class 5.
 -------------------------------
 
-If you just performed Class 4, skip to `2 - Explore F5 AI Guardrails Portal <#explore-f5-guardrails-portal>`_
+If you just performed Class 4, skip to `3 - Explore F5 AI Guardrails Portal <#3-explore-f5-guardrails-portal>`_
 
 Before you continue with this lab, here is a recap on what has been done/completed and what the pending/to-do task. This lab is to explore and understand how F5 AI Guardrails works and how to configure scanners.
 
@@ -204,7 +204,7 @@ Click **API Tokens** to create project level token. Provide and ID name for your
 
 ..  image:: ./_static/class5-aigr-project-5.png
 
-API token will be generate and copy the API token key. Ensure you keep this token value as it will be required in subsequent lab. Store this API token in a notepad or text pad for future use. You will not be able to retrive this token when you leave this screen.
+API token will be generated and copy the API token key. Ensure you keep this token value as it will be required in subsequent lab. Store this API token in a notepad or text pad for future use. You will not be able to retrive this token when you leave this screen.
 
 ..  image:: ./_static/class5-aigr-project-6.png
 
@@ -302,6 +302,10 @@ Details analysis of the blocked prompt.
 5 - Custom Guardrails Scanner Policy
 ------------------------------------
 
+Apart from the in-built scanner, you can create a custom guardrails scanner policy tailored to your specific use cases and business needs
+
+Select **Playground** and click **Build a custom scanner** to create a custom scanner policy. Select **GenAI Scanner** as the scanner type.
+
 ..  image:: ./_static/class5-custom-policy-1.png
 
 
@@ -319,20 +323,22 @@ Create a custom GenAI scanner policy to detect internal financial forecast data 
    Detect any mention of internal financial forecasts or budget data
 
 
-..  image:: ./_static/class5-custom-policy-2.png
-
 Click **Save** to save the custom scanner policy. 
 
 
-..  image:: ./_static/class5-custom-policy-3.png
+..  image:: ./_static/class5-custom-policy-2.png
 
 
 Click **Save Version** to save the custom scanner policy version.
 
-..  image:: ./_static/class5-custom-policy-4.png
+..  image:: ./_static/class5-custom-policy-3.png
 
 
 To test scanner, select **test** toggle button and input the following prompt to see if the custom scanner policy work as expected.
+
+..  image:: ./_static/class5-custom-policy-4.png
+
+
 
 .. code-block:: bash
 
