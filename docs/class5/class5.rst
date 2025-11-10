@@ -422,7 +422,7 @@ Select **Agentflows** and the *arcadia-agent-rag**
 
 ..  image:: ./_static/class5-inline-02.png
 
-Edit the Q&A Agent. **Double Click** the QnA node to edit the node.
+Edit the **QnA Agent**. **Double Click** the QnA node to edit the node.
 
 ..  image:: ./_static/class5-inline-03.png
 
@@ -436,7 +436,7 @@ Enter the credential name and the API token generated earlier in F5 AI Guardrail
 
 .. NOTE::
 
-   Recall your API token you created and stored earlier in F5 AI Guardrails portal.
+   Recall your project API token you created and stored earlier in F5 AI Guardrails portal.
 
    ..  image:: ./_static/class5-inline-06.png
 
@@ -520,13 +520,18 @@ From Arcadia RAG Chatbot, test to see if F5 AI Guardrails is able to redact PII 
 
 .. NOTE::
 
-   This is expected as we have disabled the PII package earlier. F5 AI Guardrails will not block PII data. Subsequently we will add redaction action to redact PII data.
+   This is expected as we have disabled the PII package earlier. F5 AI Guardrails will not block PII data. Subsequent section, we will add redaction action to redact PII data.
 
 
 AI Guardrails Out-of-band flow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We are going to deploy an Nginx pod to proxy chat completion to the LLM provider and as the same time Nginx via NJS extract prompt and/or response to F5 AI Guardrails for scanning for malicious content. F5 AI Guardrails deployed in an out-of-band method.
+We are going to deploy an Nginx pod to proxy chat completion to the LLM provider and at the same time Nginx via NJS extract prompt and/or response content to F5 AI Guardrails for scanning for malicious content. F5 AI Guardrails deployed in an out-of-band flow.
+
+.. NOTE::
+
+   For out-of-band processing, you can use asynchronous calls from your backend applications, API gateway, middleware, or any programmable data plane that can extract prompt content and send it to F5 AI Guardrails for evaluation. Both BIG-IP (using iRules) and NGINX (using NJS) are supported. For the purpose of this class, we will use Nginx with NJS to demonstrate out-of-band processing.
+
 
 ..  image:: ./_static/class5-oob-01.png
 
