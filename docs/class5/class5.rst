@@ -545,7 +545,7 @@ We are going to deploy an Nginx pod to proxy chat completion to the LLM provider
 ..  image:: ./_static/class5-oob-01-0.png
 
 
-Update AI Guardrails API Tokens in the **aigr-api-secret-olm.yaml** file.
+Update AI Guardrails project API Tokens in the **aigr-api-secret-olm.yaml** file. This is the original token created in previous section.
 
 
 .. code-block:: bash
@@ -556,7 +556,15 @@ Update AI Guardrails API Tokens in the **aigr-api-secret-olm.yaml** file.
 .. image:: ./_static/class5-oob-03.png
 
 
-Ensure AI Guardrails and the LLM provider connection name is correct in the **aigr-olm-deploy.yaml** file.
+Ensure AI Guardrails and the LLM provider connection name is correct in the **aigr-olm-deploy.yaml** file. For this class
+
++------------------------+-------------------------+
+| **AIGR_API_HOST**      | us1.calypsoai.app       |
++------------------------+-------------------------+
+| **LLM_PROVIDER_HOST**  | api.gpu.nextcnf.com     |
++------------------------+-------------------------+
+
+If you are using different LLM provider, please update accordingly.
 
 .. code-block:: bash
 
