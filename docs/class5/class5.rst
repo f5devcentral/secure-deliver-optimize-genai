@@ -388,8 +388,8 @@ You can also validate from the **Logs** screen that the custom scanner policy is
 4 - Secure Arcadia AI-Powered Chatbot
 -------------------------------------
 
-Inline deployment
-~~~~~~~~~~~~~~~~~
+AI Guardrails Inline flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 F5 AI Guardrails offers an OpenAI-compatible API endpoint, allowing you to secure your prompts with minimal changes to your existing code. By redirecting your AI Apps or agents to the F5 AI Guardrails URL and using a AI Guardrails token as the API key, all requests are automatically scanned and protected.
 
@@ -514,8 +514,8 @@ From Arcadia RAG Chatbot, test to see if F5 AI Guardrails is able to redact PII 
    This is expected as we have disabled the PII package earlier. F5 AI Guardrails will not block PII data. Subsequently we will add redaction action to redact PII data.
 
 
-Out-of-band deployment
-~~~~~~~~~~~~~~~~~~~~~~
+AI Guardrails Out-of-band flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We are going to deploy an Nginx pod to proxy chat completion to the LLM provider and as the same time Nginx via NJS extract prompt and/or response to F5 AI Guardrails for scanning for malicious content. F5 AI Guardrails deployed in an out-of-band method.
 
