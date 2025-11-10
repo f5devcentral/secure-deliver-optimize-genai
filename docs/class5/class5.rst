@@ -1,7 +1,10 @@
-Class 5: Secure, Deliver and Optimize GenAI ChatBot
-===================================================
+Class 5: Secure, Deliver and Optimize GenAI Apps/Agents
+========================================================
 
 ..  image:: ./_static/mission5.png
+
+1 - Introduction
+----------------
 
 Below are the common building blocks of AI Services - AI Reference Architecture. We will go through some of those components in the class. 
 
@@ -17,7 +20,7 @@ For the purpose of this class, we will only focus on F5 AI Guardrails - Runtime 
 
 ..  image:: ./_static/class5-1-1.png
 
-1 - Introduction to F5 AI Guardrails
+2 - Introduction to F5 AI Guardrails
 ------------------------------------
 
 What it is?
@@ -160,7 +163,7 @@ As shown, our GenAI chatbot is vulnerable to information leakage as well as pron
 In this class, we will explore F5 AI Guardrails and configure F5 AI Guardrails policy to secure and govern our LLM traffic - Arcadia RAG chatbot and beyond.
 
 
-2 - Explore F5 AI Guardrails Portal
+3 - Explore F5 AI Guardrails Portal
 -----------------------------------
 
 You should receive an email from F5 AI Guardrails (formerly CalypsoAI) invitation for account activation. If you don't see your email in your main inbox, please validate if it went to spam folder.
@@ -246,7 +249,7 @@ Click **Logs** to explore the guardrails logs. **Filter** allow you to filter lo
 
 ..  image:: ./_static/class5-log-1.png
 
-2 - Explore F5 AI Guardrails Scanner
+4 - Explore F5 AI Guardrails Scanner
 ------------------------------------
 
 
@@ -296,7 +299,7 @@ Details analysis of the blocked prompt.
 
 
 
-3 - Custom Guardrails Scanner Policy
+5 - Custom Guardrails Scanner Policy
 ------------------------------------
 
 ..  image:: ./_static/class5-custom-policy-1.png
@@ -385,7 +388,7 @@ You can also validate from the **Logs** screen that the custom scanner policy is
 
 
 
-4 - Secure Arcadia AI-Powered Chatbot
+6 - Secure Arcadia AI-Powered Chatbot
 -------------------------------------
 
 AI Guardrails Inline flow
@@ -529,7 +532,7 @@ We are going to deploy an Nginx pod to proxy chat completion to the LLM provider
 
 
 ..  image:: ./_static/class5-oob-01-0.png
-   
+
 
 Update AI Guardrails API Tokens in the **aigr-api-secret-olm.yaml** file.
 
@@ -674,17 +677,6 @@ The Nginx connector logs also shown that the PII data is redacted successfully.
 Example of a regex only matches if not f5.com email domain. Hence, only non f5.com email will be redacted. f5.com domain will not be redacted.
 
 .. image:: ./_static/class5-pii-09-no-org-email.png
-
-
-
-
-
-
-
-
-
-
-
 
 
 
