@@ -519,12 +519,17 @@ AI Guardrails Out-of-band flow
 
 We are going to deploy an Nginx pod to proxy chat completion to the LLM provider and as the same time Nginx via NJS extract prompt and/or response to F5 AI Guardrails for scanning for malicious content. F5 AI Guardrails deployed in an out-of-band method.
 
-..  image:: ./_static/class5-oob-01-0.png
+..  image:: ./_static/class5-oob-01.png
+
 
 
 .. code-block:: bash
 
    cd ~/ai-apps/aigr-connector/nginx-connector
+
+
+..  image:: ./_static/class5-oob-01-0.png
+   
 
 Update AI Guardrails API Tokens in the **aigr-api-secret-olm.yaml** file.
 
