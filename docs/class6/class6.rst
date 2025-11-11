@@ -17,7 +17,20 @@ What is AI Governance?
 ~~~~~~~~~~~~~~~~~~~~~~
 AI governance refers to the **frameworks**, **policies**, and **practices** established to guide the **ethical development, deployment, and use of artificial intelligence systems**. Its goal is to ensure that AI technologies are aligned with societal values, legal requirements, and organizational objectives while mitigating risks and addressing challenges related to bias, transparency, respect human rights, accountability, and security.
 
+What is AI Assurance?
+~~~~~~~~~~~~~~~~~~~~~
+AI assurance focuses on testing, validating, and verifying that AI systems actually behave as intended — safely, reliably, and in line with governance policies.
 
+The purpose is to prove and demonstrate that an AI system meets defined trust, safety, and compliance requirements
+
+**Key elements**
+
+- Model validation (accuracy, robustness, fairness)
+- Security & safety testing (e.g., red teaming, prompt injection testing)
+- Explainability and auditability checks
+- Continuous monitoring and reporting
+
+**F5 AI Guardrails** and **F5 AI Red Team** together form a pragmatic, end-to-end solution for AI governance and assurance: Guardrails **define and enforce safe policies at scale**, while Red Teaming **stress-tests models and AI apps to prove those controls work** — reducing regulatory, security, and reputational risk so your AI products can be trusted in production.
 
 AI Risk/Safety vs AI Security
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
