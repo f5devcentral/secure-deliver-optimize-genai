@@ -45,14 +45,55 @@ Key offering includes:-
 - Real-world scenario testing where it leverage 10,000+ monthly attack prompts and detailed “agentic fingerprint” insights (exploit paths, chain of reasoning)
 
 
+1 - Explore F5 AI Red Team Interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Reports** is the place where all your attack campaign results come together for a victory lap (or a post-mortem)
+
+**Attack campaigns** is where you orchestrate, launch, and track adversarial attacks against your AI systems
 
 ..  image:: ./_static/class6-redteam-1.png
 
+
+Some reports include a CASI (Comprehensive AI Security Index) score to help you quickly gauge how well your model performed:-
+
+- Critical (0 - 69) - Highly vulnerable, meaning it is susceptible to even basic attacks and is **not recommended for production use**.
+  
+- Warning (70 - 85) - Moderate vulnerable, meaning it has some common vulnerabilites. It's recommended to conduct more testing and **add safeguards before deploying them in production**.
+
+- Good (85 - 99) - Secure against most attacks but should still be evaluated for highly complex or novel attack vectors depending on your use case. In addition, high CASI score may potentially impact user expereince as it potentially blocks some valid/legitimate requests or overly sensitive to certain inputs evaluation. Balancing security and usability should be considered.
+
+CASI scoring only applied to Signature attacks, not Agentic Warfare attack.
+
+.. NOTE::
+       CASI evaluates several several critical factors beyond simple success rates:-
+
+       - **Severity**: The potential impact of a successful attack (e.g., bicycle lock vs. nuclear launch codes)
+  
+       - **Complexity**: The sophistication of the attack being assessed (e.g. plain text vs. complex encoding)
+  
+       - **Defensive Breaking Point (DPB)**: Identifies the weakest link in the model’s defences, focusing on the path of least resistance and considering factors like computational resources required for a successful attack
+
 ..  image:: ./_static/class6-redteam-2.png
+
+**Attack Campaign** is where you set up and launch your adversarial attacks against your AI systems. You can choose from a variety of attack types.
 
 ..  image:: ./_static/class6-redteam-3.png
 
+**Signature Attacks** - These are pre-defined attack prompts designed to exploit known vulnerabilities in AI models. They are typically based on common attack patterns and techniques that have been observed in the wild.
+
+..  image:: ./_static/class6-redteam-2-1.png
+
+**Agentic Warfare** - This is a more advanced and dynamic form of attack where autonomous agents (a group of Red Agent) are deployed to interact with the AI model or AI apps in a more sophisticated manner. These agents can adapt their strategies based on the model's responses, making them more effective at uncovering vulnerabilities that may not be exposed by static signature attacks.
+
+..  image:: ./_static/class6-redteam-2-2.png
+
+
+Report of an Attack Campaign. Click **View raw data** to see more details of every prompt used in the attack campaign.
+
 ..  image:: ./_static/class6-redteam-4.png
+
+Details of the attack prompts used in the campaign including the response from the AI model, the attack type, severity level, and whether the attack was successful or not. 
 
 ..  image:: ./_static/class6-redteam-4-1.png
 
