@@ -566,6 +566,10 @@ Alternatively, you can ssh from UDF (only if you have ssh key uploaded)
 
 Update AI Guardrails project API Tokens in the **aigr-api-secret-olm.yaml** file. This is the original token created in previous section.
 
+.. attention:: 
+
+   For production deployments, always secure API tokens using a trusted secret management solution such as Kubernetes Secrets (admin still able to view the secret) or a Vault system. The use of plain-text tokens in this lab is for demonstration convenience only and must not be done in production
+
 
 .. code-block:: bash
 
