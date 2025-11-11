@@ -440,16 +440,22 @@ Enter the credential name and the API token generated earlier in F5 AI Guardrail
 
    ..  image:: ./_static/class5-inline-06.png
 
-Ensure **Streaming** is disabled - as of this writting, streaming is not supported with F5 AI Guardrails integration.
 
-Ensure the **BasePath** is pointing to your F5 AI Guardrails deployment endpoint. The format of the BasePath is **https://<guardrails-host>/openai/<connection-name>**. You can obtains your guardrails connection name from your project connections screen in F5 AI Guardrails portal.
+Ensure the **BasePath** is pointing to your F5 AI Guardrails deployment endpoint. The format of the BasePath is **https://<guardrails-host>/openai/<connection-name>**. 
 
-..  image:: ./_static/class5-inline-06-1.png
+.. NOTE::
+
+   You can obtains your guardrails connection name from your project connections screen in F5 AI Guardrails portal.
+
+   ..  image:: ./_static/class5-inline-06-1.png
+
 
 .. code-block:: bash
 
    https://www.calypsoai.app/openai/foobz-gpuaas-chat/
 
+
+As shown below, **Streaming** is disabled - as of this writting, streaming is not supported with F5 AI Guardrails integration.
 
 ..  image:: ./_static/class5-inline-07.png
 
@@ -535,7 +541,13 @@ We are going to deploy an Nginx pod to proxy chat completion to the LLM provider
 
 ..  image:: ./_static/class5-oob-01.png
 
+From Windows Jumphost, ssh/putty to **ai-apps** server.
 
+..  image:: ./_static/class5-oob-01-0-0.png
+
+Alternatively, you can ssh from UDF (only if you have ssh key uploaded)
+
+..  image:: ./_static/class5-oob-01-0-1.png
 
 .. code-block:: bash
 
