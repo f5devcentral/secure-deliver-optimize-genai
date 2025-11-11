@@ -104,8 +104,6 @@ CASI scoring only applied to Signature attacks, not Agentic Warfare attack.
 2 - Signature Attacks Report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Report of an Attack Campaign. Click **View raw data** to see more details of every prompt used in the attack campaign.
-
 Select **Reports** and filter based on **complete** reports.
 
 ..  image:: ./_static/class6-redteam-4-01.png
@@ -115,6 +113,8 @@ Click on **Run date** to sort the report and select report name **foobz-nim-meta
 ..  image:: ./_static/class6-redteam-4-02.png       
 
 Report dashboard shown respective information about the scanned result.
+
+Report of an Attack Campaign. Click **View raw data** to see more details of every prompt used in the attack campaign.
 
 ..  image:: ./_static/class6-redteam-4.png
 
@@ -133,7 +133,7 @@ Select **Reports** and search the following report name in the search bar and se
 
 ..  image:: ./_static/class6-redteam-ars-01-0.png
 
-Respective infor of the agentic warfare scanning displayed. Select **View agentic fingerprints**.
+Respective information of the agentic warfare scanning displayed. Select **View agentic fingerprints**.
 
 ..  image:: ./_static/class6-redteam-ars-01.png
 
