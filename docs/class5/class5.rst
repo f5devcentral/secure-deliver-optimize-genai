@@ -191,8 +191,11 @@ Click on **Connections**. Connections enable you to create connection to your La
 
 ..  image:: ./_static/class5-aigr-project-2.png
 
-Click **Add** on **foobz-gupaas-chat** as the model for your project. This connection had been pre-created and currently connected to the local GPU inference service running **llama3**
+Click **Add** on **foobz-gpuaas-chat** as the model for your project. This connection had been pre-created and currently connected to the local GPU inference service running **llama3**
 
+..  image:: ./_static/class5-aigr-project-3-0.png
+
+When you add the model connection to your project, ensure you select the right model connection and click **Add**
 
 ..  image:: ./_static/class5-aigr-project-3.png
 
