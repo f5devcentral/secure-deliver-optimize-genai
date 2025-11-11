@@ -191,7 +191,11 @@ Click on **Connections**. Connections enable you to create connection to your La
 
 ..  image:: ./_static/class5-aigr-project-2.png
 
-Click **Add** on **foobz-gpuaas-chat** as the model for your project. This connection had been pre-created and currently connected to the local GPU inference service running **llama3**
+Click **Add** on **foobz-gpuaas-chat** as the model for your project. This connection had been pre-created and currently connected to the remote GPU inference service running **llama3**
+
+.. Attention:: 
+
+   This remote GPU inference service is running on a **low end shared GPU infrastructure in a DC**. Please be considerate and avoid running heavy workload that may impact other students. Performance of the inference service may vary and may not scale for large audiences. Thank you for your understanding.
 
 ..  image:: ./_static/class5-aigr-project-3-0.png
 
