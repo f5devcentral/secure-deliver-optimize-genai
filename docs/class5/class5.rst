@@ -550,6 +550,15 @@ We are going to deploy an Nginx pod to proxy chat completion to the LLM provider
 
 From Windows Jumphost, ssh/putty to **ai-apps** server.
 
++----------------+--------------------+
+| **Hostname**   | ai-apps / 10.1.1.4 |
++----------------+--------------------+
+| **Username**   | ubuntu             |
++----------------+--------------------+
+| **Password**   | HelloUDF           |
++----------------+--------------------+
+
+
 ..  image:: ./_static/class5-oob-01-0-0.png
 
 Alternatively, you can ssh from UDF (only if you have ssh key uploaded)
