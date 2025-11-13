@@ -168,6 +168,11 @@ In this class, we will explore F5 AI Guardrails and configure F5 AI Guardrails p
 
 You should receive an email from F5 AI Guardrails (formerly CalypsoAI) invitation for account activation. If you don't see your email in your main inbox, please validate if it went to spam folder.
 
+.. attention:: 
+
+   Please note that your email address may include **+udf** (for example, name+udf@example.com). Use this full address when logging in to the portal
+
+
 ..  image:: ./_static/class5-aigr-email-1.png
 
 Clieck **Activate Your Account** to setup your password.
