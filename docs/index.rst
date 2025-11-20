@@ -1,5 +1,5 @@
-Secure, Deliver and Optimize GenAI Apps with F5
-===============================================
+AI Runtime Security Practitioner
+=================================
 
 Welcome to the |classbold|
 

@@ -13,7 +13,7 @@ import f5_sphinx_theme
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "Secure, Deliver and Optimize GenAI Apps with F5"
+classname = "AI Runtime Security Practitioner"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
 github_repo = "https://github.com/f5devcentral/secure-deliver-optimize-genai"
