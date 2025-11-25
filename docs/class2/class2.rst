@@ -3,22 +3,34 @@ Class 2: Deploy and Secure a modern application
 
 ..  image:: ./_static/mission2.png
 
+To be accomplished in this lab
+-------------------------------
+In this lab, you will learn how to:
+
+..  image:: ./_static/class2-0-0.png
+
+1. Deploy NGINX Ingress Controller with App Protect to protect Web Apps Server
+2. Deploy Arcadia Financial Modern Apps
+3. Secure Modern Apps with NGINX App Protect WAF
+
+
+
 1 - Deploy Nginx Ingress Controller with App Protect to protect Web Apps Server
 --------------------------------------------------------------------------------
 
 ..  image:: ./_static/class2-0.png
 
-After login/putty to linux Jumphost (from Windows10 Jumphost), change directory to **webapps**. Jumphost server was installed with utilities called 'direnv' - https://direnv.net/. Its a tools that will load the environment file (kubeconfig) when you switch to that directory. Its an efficient tools to switch K8S context from one cluster to the other just by changing directory.
+After login/putty to linux Jumphost (from Windows11 Jumphost), change directory to **ai-apps**. Jumphost server was installed with utilities called 'direnv' - https://direnv.net/. Its a tools that will load the environment file (kubeconfig) when you switch to that directory. Its an efficient tools to switch K8S context from one cluster to the other just by changing directory.
 
 .. NOTE::
-       Refer to **Prerequsite** section to find the password for the Windows10 and Linux Jumphost.
+       Refer to **Prerequsite** section to find the password for the Windows11 and Linux Jumphost (ssh session).
        
-       Majority of the CLI will be executed from Linux Jumphost and Browser activites from Windows10 Jumphost.
+       Majority of the CLI will be executed from Linux Jumphost (ssh session) and/or Browser activites from Windows11 Jumphost.
 
 
 .. code-block:: bash
 
-   cd webapps
+   cd ~/ai-apps
 
 
 .. code-block:: bash
@@ -38,7 +50,7 @@ Execute the following command to install NGINX Ingress controller with the provi
 
 .. code-block:: bash
 
-   cd ~/webapps/nginx-ingress
+   cd ~/ai-apps/nginx-ingress
 
 .. code-block:: bash
 
@@ -110,7 +122,7 @@ Deploy Arcadia Financial application on Kubernetes. Arcadia Trading consist of m
 
 .. code-block:: bash
 
-   cd ~/webapps/arcadia
+   cd ~/ai-apps/arcadia
 
 .. code-block:: bash
 
@@ -190,7 +202,7 @@ Apply NGINX App Protect WAF rules and update Nginx ingress resource to protect A
 
 .. code-block:: bash
 
-   cd ~/webapps/arcadia
+   cd ~/ai-apps/arcadia
 
 .. code-block:: bash
 
@@ -222,7 +234,7 @@ Test by injecting a simple XSS into the header as shown. You should get a custom
 ..  image:: ./_static/class2-9.png
 
 .. Note:: 
-   NGINX App Protect offers additional capabilities to enhance the security of modern applications. Since this class focuses on securing GenAI applications, we will specifically address securing GenAI chatbots. While security logs can be forwarded to an external syslog server and visualized with Grafana, we will not cover these as part of the lab exercises. For more information on using App Protect WAF, please refer to other NGINX labs.
+   NGINX App Protect offers additional capabilities to enhance the security of modern applications. Since this class focuses on securing GenAI applications, we will specifically address securing GenAI chatbots. While security logs can be forwarded to NGINX One SaaS or to an external syslog server and visualized with Grafana, we will not cover these as part of the lab exercises. For more information on using App Protect WAF, please refer to other NGINX labs.
 
 
 4 - Recap

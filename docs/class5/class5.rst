@@ -24,7 +24,7 @@ For the purpose of this class, we will only focus on F5 AI Guardrails - Runtime 
 ------------------------------------
 
 What it is?
-~~~~~~~~~~
+~~~~~~~~~~~
 
 F5 AI Guardrails is a solution aimed at securing AI models and agents in production. It addresses three major risk domains
 
