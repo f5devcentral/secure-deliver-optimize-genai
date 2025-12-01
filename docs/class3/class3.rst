@@ -144,6 +144,8 @@ Confirm that you can login and access to LLM orchestrator (flowise)
 |
 |
 
+Pre-installed FlowiseAI instance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 From a new browser tab, login to the **pre-installed FlowiseAI instance**
 
