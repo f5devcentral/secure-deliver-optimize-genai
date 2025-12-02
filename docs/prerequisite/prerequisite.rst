@@ -58,6 +58,9 @@ You may be asked to allow text and images copies to the clipboard. Please allow 
 ..  image:: /_static/intro/kasm-2.png
 
 
+If you have issues on the KASM desktop resolution, you can change the resolution from the setting as shown below.
+
+..  image:: /_static/intro/kasm-2-1.png
 
 Windows11 Jumphost Console
 --------------------------

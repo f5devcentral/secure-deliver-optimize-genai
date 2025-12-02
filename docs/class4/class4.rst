@@ -5,6 +5,14 @@ Class 4: Enhance Modern Application with GenAI ChatBot
 
 In previous class, you successfully build a GenAI RAG chatbot using langchain framework with Flowise AI. In this class, we will learn how to integrate flowise chat into Arcadia Financial application.
 
+What You’ll Learn in This Lab
+-----------------------------
+In this lab, you will learn how to:
+1. Integrate AI Service (RAG ChatBot) into Arcadia Trading
+2. Validate GenAI RAG Chatbot in Arcadia Trading Application
+3. Understand Security Risks of GenAI Chatbot that expose Sensitive Information (PII) and System Prompt Leakage.
+
+
 
 1 - Integrate AI Service (RAG ChatBot) into Arcadia Trading
 -----------------------------------------------------------
@@ -23,15 +31,15 @@ We need the **chatflowid** and **apihost** to use in our code.
 
 ..  image:: ./_static/class4-3.png
 
-Update our frontend apps to incorporate flowise **chatflowid** and **chatai_apihost**
+Update our frontend apps to incorporate flowise **chatflowid** and **apiHost**
 
 .. attention:: 
-   You need to be familiar to use **vi** editor or any editor of you choice in Linux. You likely will need to update/edit "chatflowid" as its a dynamic value everytime you load the chatflow. **chatai_apihost** is static and pointing to langchain API endpoint - https://llm-orch.ai.local, which based on our lab setup.
+   You need to be familiar to use **vi** editor or any editor of you choice in Linux. You likely will need to update/edit "chatflowid" as its a dynamic value everytime you load the chatflow. **apihost** is static and pointing to langchain API endpoint - https://llm-orch.ai.local, which based on our lab setup.
 
 
 .. code-block:: bash
 
-   cd ~/webapps/arcadia/frontend
+   cd ~/ai-apps/arcadia/frontend
 
 .. code-block:: bash
 
