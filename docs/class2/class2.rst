@@ -3,8 +3,8 @@ Class 2: Deploy and Secure a modern application
 
 ..  image:: ./_static/mission2.png
 
-To be accomplished in this lab
--------------------------------
+What You’ll Learn in This Lab
+-----------------------------
 In this lab, you will learn how to:
 
 ..  image:: ./_static/class2-0-0.png

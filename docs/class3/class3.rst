@@ -3,16 +3,28 @@ Class 3: Architect, build and deploy AI Services
 
 ..  image:: ./_static/mission3.png
 
-With the growing popularity of Generative AI and AI agents, your organization has decided to upgrade the Arcadia trading platform by integrating a Generative AI (GenAI) chatbot. Below is the conceptual architecture of the AI Services setup.
+With the growing popularity of Generative AI and AI agents, your organization has decided to upgrade the Arcadia trading platform by integrating a Generative AI agent-powered chatbot. Below is the conceptual architecture of the AI Services setup.
+
 
 1 - Conceptual Architecture of AI Services
 ------------------------------------------
 
 ..  image:: ./_static/class3-1.png
 
+- The end user submits a query/prompt through the Arcadia Financial AI Agent Chatbot.
+- The LLM Orchestrator (FlowiseAI) receives the query and determines the next action.
+- If the query requires proprietary data, the Orchestrator retrieves relevant information from the Vector Database (Qdrant) using similarity search.
+- The retrieved data is combined with the user query to form an enriched, context-aware prompt.
+- This enriched prompt is sent to the LLM provider, fronted by the F5 data plane, which ensures security and resiliency of the AI services.
+- The F5 data plane inspects the request, extracts relevant content, detects malicious intent, and enforces AI Guardrails policies to ensure safe and compliant usage.
+- If the prompt violates safety or governance rules, the data plane takes the appropriate action (e.g., block, redact, or modify the prompt).
+- If the prompt is safe and compliant, it is forwarded to the LLM model to generate a response.
+- The LLM model generates a response and sends it back to the Orchestrator through the F5 data plane.
+- The F5 data plane can optionally re-inspect the LLM response for malicious content or policy violations before releasing it.
+- Finally, the LLM Orchestrator returns the validated response to the end user through the Arcadia Financial AI Agent Chatbot.
 
-To be accomplished in this lab
--------------------------------
+What You’ll Learn in This Lab
+-----------------------------
 In this lab, you will learn how to:
 
 ..  image:: ./_static/class3-1-0.png
@@ -20,6 +32,7 @@ In this lab, you will learn how to:
 1. Architect AI/Agent Services for Generative AI applications
 2. Deploy LLM orchestrator service (Flowise AI)
 3. Deploy Vector Database (Qdrant) and build RAG pipeline
+4. Integrate LLM orchestrator with Vector Database to build GenAI RAG Chatbot
 
 
 .. Note:: 
@@ -140,6 +153,11 @@ Confirm that you can login and access to LLM orchestrator (flowise)
 ..  image:: ./_static/class3-15.png
 
 ..  image:: ./_static/class3-15-1.png   
+
+You successfully learn and experience the deployment of LLM Orchestrator (FlowiseAI)
+
+|
+|
 
 |
 |
@@ -263,25 +281,23 @@ Confirm that you can login to Qdrant vector database
 4 - Build FlowsieAI Documents Store
 -----------------------------------
 
-RAG incorporate proprietary data to complement models and deliver more contextually aware AI outputs. However, in NLP (Neural Language Processing), AI don't understand human language. Those texts or knowledge need to be converted into an understandable language by NLP where the process called embedding required to convert text into series of vector array.
-
-**nomic-embed-text** is an embedding model that able to convert text into a vector array. In order for nomic-embed-text to work, the Qdrant dimension have to be updated to **768**.
+Retrival Augemented Generation (RAG) incorporate proprietary data to complement models and deliver more contextually aware AI outputs. However, in NLP (Neural Language Processing), AI don't understand human language. Those texts or knowledge need to be converted into an understandable language by NLP where the process called embedding required to convert text into series of vector array.
 
 
-Select **Document Stores** from the left menu. Click **Add New** to create a new document store. Click **Add**
+Select **Document Stores** from the left menu. Click **Add New** to create a new document store. Give it a name and click **Add**
 
 ..  image:: ./_static/class3-doc-store-01.png
 
 
-Select **arcadia-team**
+Select **arcadia-team** (currently empty document store)
 
 ..  image:: ./_static/class3-doc-store-02.png
 
-Click **Add Document Loader**. Search *text* and select **Text File**
+Click **Add Document Loader**. Search for keyword *text* and select **Text File**
 
 ..  image:: ./_static/class3-doc-store-03.png
 
-Name the Text File Loader Name as **arcadia-team**. Select **Upload File** and choose the text file as shown
+Name the Text File Loader Name as **arcadia-team**. Select **Upload File** and choose the text file as shown. The text file located on the jumphost **Documents** directory.
 
 ..  image:: ./_static/class3-doc-store-04.png
 
@@ -299,11 +315,19 @@ Start with **Select Embeddings**
 
 ..  image:: ./_static/class3-doc-store-07.png
 
-Search for *openai** and select **OpenAI Embeddings Custom**
+Search for keyword **openai** and select **OpenAI Embeddings Custom**
 
 ..  image:: ./_static/class3-doc-store-08.png
 
 Select **gpuaas-api-key** for the OpenAI API Key.
+
+.. NOTE:: 
+   **gpuaas-api-key** is a pre-configured secret that store the API key credential to access GPUaaS OpenAI compatible endpoint. This endpoint will be use for **model embedding**.
+
+   **azure-open-ai** is another pre-configured secret that store the API key credential to access Azure OpenAI endpoint. This endpoint will be use for **model inference**.
+
+   ..  image:: ./_static/class3-doc-store-08-1.png
+
 
 For **BasePath**, input the following URL
 
@@ -329,7 +353,7 @@ Search and select **Qdrant**
 
 ..  image:: ./_static/class3-doc-store-10.png
 
-For **Qdrant Server URL**, input the following URL
+For **Qdrant Server URL**, input the following URL. This is the URL that you deployed earlier to access Qdrant vector database service. Please do note that for this lab, we are using HTTP protocol to access Qdrant service. In production environment, please ensure HTTPS is used to secure the communication.
 
 .. code-block:: bash
 
@@ -351,7 +375,9 @@ Ensure that **Similarity** is set to **Cosine**
 
 ..  image:: ./_static/class3-doc-store-11.png
 
-Click **Select Record Manager** and select **SQLite Record Manager**
+Click **Select Record Manager** and select **SQLite Record Manager**. Record Managers keep track of your indexed documents, preventing duplicated vector embeddings.
+
+When document chunks are upserting, each chunk will be hashed using SHA-1 algorithm. These hashes will get stored in Record Manager. If there is an existing hash, the embedding and upserting process will be skipped
 
 ..  image:: ./_static/class3-doc-store-12.png
 
@@ -424,9 +450,9 @@ Validate your first GenAI RAG Chatbot
 
 Click the Chat Icon
 
-..  image:: ./_static/class3-agentflow-04.png
+..  image:: ./_static/class3-agentflow-05.png
 
-Input on the chat box
+Input the flowing prompt to interact with the RAG chatbot
 
 .. code-block:: bash
 
@@ -439,7 +465,7 @@ Input on the chat box
 Suggested sample question ask to the RAG chatbot
 
 .. Note:: 
-   AI responses are non-deterministric. It means that give the same input, it can produce different output at different times - no gurantee to be consistent and can vary depending on internal factors within the model, like the order of data processing or random initilization. Hence, sometimes, you may need to ask twice for the language model to give an answer. For example "who is chris wong" may need to ask twice to the chatbot.
+   AI responses are non-deterministric. It means that give the same input, it can produce different output at different times - no gurantee to be consistent and can vary depending on internal factors within the model, like the order of data processing or random initilization. Hence, sometimes, you may need to ask twice for the language model to give an answer. 
 
 .. code-block:: bash
 
@@ -453,10 +479,12 @@ Suggested sample question ask to the RAG chatbot
 
    tell me more about david strong
 
-Source of inforamtion or "proprietary data" obtained from the text file store on Documents folder on the Windows jumphost.
+Source of inforamtion or "proprietary data" obtained from the text file store on Documents folder on the jumphost.
 
 .. NOTE:: 
    You can clear the chat history with the middle red button on the chat window.
+
+Here the documents uploaded into the document store earlier, which contains information about Arcadia Financial leadership team and associated sensitive information.
 
 ..  image:: ./_static/class3-34.png
 
