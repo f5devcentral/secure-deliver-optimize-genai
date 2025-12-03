@@ -829,6 +829,7 @@ Test harmful intent prompts to validate F5 AI Guardrails is able to block those 
 
 .. image:: ./_static/class5-harmful-aigr-4.png
 
+F5 AI Guardrails is able to mitigate AI security and safety risks by blocking those harmful intent prompts.
 
 |
 |
