@@ -164,7 +164,7 @@ Harmful - toxicity / hate
 Leverage leetspeak encoding to bypass model safeguards
 
 .. Note:: 
-   **Leetspeak encoding** (often written as “leet speak” or “l33t sp34k”) is a style of text obfuscation where letters are intentionally replaced with visually similar numbers, symbols, or letter combinations. It originated from early hacker and gaming communities as a way to bypass filters, show skill, or just be playful.
+   **Leetspeak encoding** (often written as “leet speak” or “l33t sp34k”) is a style of text obfuscation where letters are intentionally replaced with visually similar numbers, symbols, or letter combinations. It originated from early hacker and gaming communities as a way to bypass filters, show skill, or just be playful. Its a common bypass or obfuscation technique use to reveal weaknesses of content moderation.
 
 
 
@@ -174,9 +174,11 @@ Leverage leetspeak encoding to bypass model safeguards
 
 ..  image:: ./_static/class4-harmful-4.png
 
-
+.. Note:: 
+   AI response is non-deterministric. You may need to try multiple times to get the desired response.
+ 
+   
 |
-
 |
 
 As demonstrated, our GenAI RAG agent chatbot is currently **vulnerable** to information leakage and susceptible to prompt-injection attacks, which also results in **violations of core AI safety principles**.

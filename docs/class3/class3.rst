@@ -142,6 +142,13 @@ Create an Nginx ingress resource to **expose FlowiseAI/Langchain service** exter
 
 Confirm that you can login and access to LLM orchestrator (flowise)
 
+Input the following URL on a new browser tab
+
+.. code-block:: bash
+
+   https://llm-orch-dev.ai.local
+
+
 .. attention:: 
    You will asked to register. This username and password will be use to login in future. Use the following suggested credential
 
