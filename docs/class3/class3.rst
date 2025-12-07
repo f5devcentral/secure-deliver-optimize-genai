@@ -411,7 +411,11 @@ Double click on the **QnA** node to edit the configuration.
 
 ..  image:: ./_static/class3-agentflow-01-1.png
 
-On **ChatOpenAI Custom**, select **ChatOpenAI Custom Parameter** drop down. Ensure the following parameters are set as shown.
+On **ChatOpenAI Custom**, select **ChatOpenAI Custom Parameter** drop down.
+
+..  image:: ./_static/class3-agentflow-01-0.png
+
+Ensure the following parameters are set as shown.
 
 Model Name
 
