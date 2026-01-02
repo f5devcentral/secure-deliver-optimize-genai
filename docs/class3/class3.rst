@@ -161,7 +161,12 @@ Input the following URL on a new browser tab
 
 ..  image:: ./_static/class3-15-1.png   
 
-You successfully learn and experience the deployment of LLM Orchestrator (FlowiseAI)
+You successfully learn and experience the deployment of LLM Orchestrator (FlowiseAI).
+
+
+.. Attention:: 
+   We are **NOT** going to use this FlowiseAI instance for the rest of the lab. We will be using the pre-installed FlowiseAI instance on **flowiseai** namespace instead - which already have the necessary LLM provider credential configured.
+
 
 |
 |
@@ -276,6 +281,8 @@ Create an Nginx ingress resource to **expose Qdrant VectorDB service** externall
 
 ..  image:: ./_static/class3-22.png
 
+We have 2 ingress resource created to expose Qdrant service - Qdrant Vector DB API service (HTTP) and Qdrant Dashboard/UI (HTTPS).
+
 Confirm that you can login to Qdrant vector database
 
 .. attention:: 
@@ -326,12 +333,11 @@ Search for keyword **openai** and select **OpenAI Embeddings Custom**
 
 ..  image:: ./_static/class3-doc-store-08.png
 
-Select **gpuaas-api-key** for the OpenAI API Key.
+Select **azure-open-ai** for the OpenAI API Key.
 
 .. NOTE:: 
-   **gpuaas-api-key** is a pre-configured secret that store the API key credential to access GPUaaS OpenAI compatible endpoint. This endpoint will be use for **model embedding**.
 
-   **azure-open-ai** is another pre-configured secret that store the API key credential to access Azure OpenAI endpoint. This endpoint will be use for **model inference**.
+   **azure-open-ai** is a pre-configured secret that store the API key credential to access Azure OpenAI endpoint. This endpoint will be use for **model embedding** and **model inference**
 
    ..  image:: ./_static/class3-doc-store-08-1.png
 
@@ -340,15 +346,15 @@ For **BasePath**, input the following URL
 
 .. code-block:: bash
 
-   https://api.gpu.nextcnf.com/v1
+   https://calypsotraining-openai.openai.azure.com/openai/v1
 
 For **Model Name**, input the following model
 
 .. code-block:: bash
 
-   nomic-embed-text
+   text-embedding-ada-002
 
-**nomic-embed-text** is an embedding model that able to convert text into a vector array. In order for nomic-embed-text to work, the Qdrant dimension have to be updated to **768**.
+**text-embedding-ada-002** is an embedding model that able to convert text into a vector array.
 
 
 ..  image:: ./_static/class3-doc-store-09.png
@@ -376,7 +382,7 @@ For **Vector Dimension**, input the following value
 
 .. code-block:: bash
 
-   768
+   1536
 
 Ensure that **Similarity** is set to **Cosine**
 

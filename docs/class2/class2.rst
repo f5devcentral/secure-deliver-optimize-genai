@@ -225,7 +225,7 @@ Apply NGINX App Protect WAF rules and update Nginx ingress resource to protect A
 
 Validate to ensure apps are protected.
 
-Test by injecting a simple XSS into the header as shown. You should get a custom WAF block page.
+Test by injecting a simple XSS attack into the header as shown. This simulate an attack to the Web application and will trigger attack mitigation from NGINX AppProtect. You should get a custom WAF block page as shown.
 
 .. code-block:: bash
 

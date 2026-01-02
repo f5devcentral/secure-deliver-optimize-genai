@@ -65,7 +65,7 @@ If you have issues on the KASM desktop resolution, you can change the resolution
 Windows11 Jumphost Console
 --------------------------
 
-As a last resort, you can also use Windows11 Jumphost Console to do the lab (QUEMU VNC). This options does not allow copy and paste function between your laptop and Windows11 Jumphost Console.
+As a last resort, you can also use Windows11 Jumphost Console to do the lab (QUEMU VNC). This options **DOES NOT** allow copy and paste function between your laptop and Windows11 Jumphost Console. However, you can access the lab document from the browser within the Windows11 Jumphost Console - which allow you to copy and paste content between the lab document and Windows11 Jumphost Console.
 
 ..  image:: /_static/intro/win-0.png
 
@@ -76,10 +76,6 @@ Lab Setup Environment
 +-------------------------------+-----------------------+------------+--------------------------------------------------------+
 | Service                       | FQDN / URL            | IP Address | Remark                                                 |
 +===============================+=======================+============+========================================================+
-| Open-WebUI Service            | open-webui.ai.local   | 10.1.1.5   | Web-UI frontend for AI Model (Ollama)                  |
-+-------------------------------+-----------------------+------------+--------------------------------------------------------+
-| Ollama Service                | ollama.ai.local       | 10.1.1.5   | Platform to run and host AI Model                      |
-+-------------------------------+-----------------------+------------+--------------------------------------------------------+
 | Windows11 Jumphost            | NA                    | 10.1.1.6   | Windows11 Jumphost. Access via RDP from laptop         |
 +-------------------------------+-----------------------+------------+--------------------------------------------------------+
 | Arcadia Financial Modern Apps | arcadia.ai.local      | 10.1.1.4   | Sample Modern financial trading application            |
