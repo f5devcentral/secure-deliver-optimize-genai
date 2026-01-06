@@ -47,6 +47,8 @@ Why it's relevant?
 
 As organizations deploy more AI models and agents, the attack surface expands. F5 AI Guardrails is positioned to help maintain a secure posture by automating controls, offering real-time protection and governance at scale.
 
+..  image:: ./_static/class5-1-0-0-1.png
+
 
 Recap when starting at Class 5.
 -------------------------------

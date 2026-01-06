@@ -57,6 +57,9 @@ Key offering includes:-
 - Continuous assessment capabilities so defenses evolve as AI threats evolve, across pilot to production environments
 - Real-world scenario testing where it leverage 10,000+ monthly attack prompts and detailed “agentic fingerprint” insights (exploit paths, chain of reasoning)
 
+..  image:: ./_static/class6-redteam-1-0.png
+
+
 
 1 - Explore F5 AI Red Team Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
