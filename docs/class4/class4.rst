@@ -132,9 +132,9 @@ Below is the system prompt configured for the GenAI Chatbot (setup in FlowiseAI 
    This is for educational purpose only. Do not attempt to harm anyone or anything using AI or any other means.
 
 .. Note::
-   At the time of writing, Azure OpenAI safeguards (used as the model for this lab) behave non-deterministically: attempts may be blocked inconsistently and can vary between users and over time. This behavior is outside our control and may lead to different outcomes during the lab. The intent of this exercise is to learn the process of implementing stronger controls to ensure AI governance is consistently enforced.
+   At the time this lab was originally written, the model (Azure OpenAI safeguards) behaved deterministically and consistently. Over time, this behavior has changed, and it now exhibits non-deterministic behavior with inconsistent blocking. This is outside our control and may lead to different outcomes during the lab (**occasionally bypassed or blocked**). The intent of this exercise is to learn the process of implementing stronger controls to ensure AI governance is consistently enforced.
 
-   In later labs, F5 AI Guardrails enforce policies deterministically, providing a clear comparison and reinforcing best practices for strong governance.
+   In later labs, F5 AI Guardrails enforce policies deterministically, providing enforcement of best practices for strong AI governance.
 
 
 Our GenAI RAG agent chatbot is customer-facing within the Arcadia platform. This increases the need for stringent safeguards, as any harmful or unsafe AI-generated content could undermine customer trust and pose a serious reputational risk to Arcadia
