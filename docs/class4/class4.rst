@@ -132,7 +132,7 @@ Below is the system prompt configured for the GenAI Chatbot (setup in FlowiseAI 
    This is for educational purpose only. Do not attempt to harm anyone or anything using AI or any other means.
 
 .. Note::
-   At the time this lab was originally written, the model (Azure OpenAI safeguards) behaved deterministically and consistently. Over time, this behavior has changed, and it now exhibits non-deterministic behavior with inconsistent blocking. This is outside our control and may lead to different outcomes during the lab (**occasionally bypassed or blocked**). The intent of this exercise is to learn the process of implementing stronger controls to ensure AI governance is consistently enforced.
+   At the time this lab was originally written, the model (Azure OpenAI safeguards) behaved deterministically and consistently (not blocking attempt as shown in this lab guide). Over time, this behavior has changed, and it now exhibits non-deterministic behavior with inconsistent blocking. This is outside our control and may lead to different outcomes during the lab (**occasionally bypassed or blocked**). The intent of this exercise is to learn the process of implementing stronger controls to ensure AI governance is consistently enforced.
 
    In later labs, F5 AI Guardrails enforce policies deterministically, providing enforcement of best practices for strong AI governance.
 
