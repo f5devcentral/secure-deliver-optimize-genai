@@ -53,7 +53,7 @@ As organizations deploy more AI models and agents, the attack surface expands. F
 Recap when starting at Class 5.
 -------------------------------
 
-If you just performed Class 4, skip to `3 - Explore F5 AI Guardrails Portal <#3-explore-f5-guardrails-portal>`_
+If you just performed Class 4, skip to `3 - Explore F5 AI Guardrails Portal <explore-f5-guardrails-portal_>`_
 
 Before you continue with this lab, here is a recap on what has been done/completed and what the pending/to-do task. This lab is to explore and understand how F5 AI Guardrails works and how to configure scanners.
 
@@ -217,6 +217,7 @@ As demonstrated, our GenAI RAG agent chatbot is currently **vulnerable** to info
 
 In this class, we will explore F5 AI Guardrails and configure F5 AI Guardrails policy to secure and govern our LLM traffic - Arcadia RAG chatbot and beyond.
 
+.. _explore-f5-guardrails-portal:
 
 3 - Explore F5 AI Guardrails Portal
 -----------------------------------
@@ -676,7 +677,7 @@ Deploy the Nginx AI Guardrails connector pod.
 
 .. Attention:: 
    
-   This Nginx NJS connector script is provided as-is for educational purpose only. As of this writting, its not officially deliver as part of F5 AI Guardrails stack. For production deployment, please harden the Nginx connector accordingly before deploying to production environment.
+   This Nginx NJS connector script is provided as-is for educational purpose only. As of this writting, its not officially deliver as part of F5 AI Guardrails stack. For production deployment, please reach out to F5 Professional Services. This connector functions can also be implemented in BIG-IP using iRules.
 
 .. code-block:: bash
 
@@ -710,7 +711,7 @@ Update FlowiseAI QnA Agent to point to Nginx AI Guardrails connector endpoint.
 
 .. image:: ./_static/class5-oob-05.png
 
-Ensure FlowiseAI QnA Agent is pointing to Nginx AI Guardrails connector endpoint. **REMEMBER** to save the changes.
+Ensure FlowiseAI QnA Agent is pointing to Nginx AI Guardrails connector endpoint. **REMEMBER** to save any changes.
 
 .. code-block:: bash
 
