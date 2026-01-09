@@ -255,7 +255,7 @@ Click **Add** on **genai-azure-openai** as the model for your project. This conn
 
 .. Attention:: 
 
-   This remote GPU inference service is running on a **Azure OpenAI Model as a Service**. Please be considerate and avoid running heavy workload that may impact other students. Performance of the inference service may vary and may not scale for large audiences. Thank you for your understanding.
+   This remote GPU inference service is running on a **Azure OpenAI Model as a Service**. Please be considerate and avoid running un-neccessary heavy workload that may impact other students. Performance of the inference service may vary. Thank you for your understanding.
 
 ..  image:: ./_static/class5-aigr-project-3-0.png
 
@@ -705,7 +705,7 @@ Update FlowiseAI QnA Agent to point to Nginx AI Guardrails connector endpoint.
 
 .. NOTE::
 
-   For this out-of-band deployment, we are going to use OpenAI API compatible endpoint as the LLM provider. In this case, **gpuaas-api-key** was pre-created and ready to be used.
+   For this out-of-band deployment, we are going to use OpenAI API compatible endpoint as the LLM provider. In this case, **azure-open-ai** was pre-created and ready to be used.
 
 
 .. image:: ./_static/class5-oob-05.png
@@ -714,7 +714,7 @@ Ensure FlowiseAI QnA Agent is pointing to Nginx AI Guardrails connector endpoint
 
 .. code-block:: bash
 
-   https://aigr-olm.ai.local/openai/v1
+   https://aigr-olm.ai.local/v1
 
 
 
