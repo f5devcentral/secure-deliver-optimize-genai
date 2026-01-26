@@ -240,6 +240,11 @@ Upon successfully setup your password, login to F5 AI Guardrails Portal. Ensure 
 ..  image:: ./_static/class5-aigr-dash.png
 
 
+.. NOTE::
+
+   In case you foget the URL of the F5 AI Guardrails portal, here is the link to access the portal: https://www.us2.calypsoai.app/
+   
+
 Projects
 ~~~~~~~~
 
