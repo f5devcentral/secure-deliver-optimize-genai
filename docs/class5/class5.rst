@@ -241,7 +241,7 @@ Upon successfully setup your password, login to F5 AI Guardrails Portal. Ensure 
 
 .. attention:: 
 
-   When it redirecting to the login page, you may need to clear browser cache prior or use a private/incognito window to avoid auto login with previous session information
+   When it redirecting to the login page, you may need to clear browser cache prior or use a private/incognito browser to avoid auto login with previous session information
 
 
 .. NOTE::
