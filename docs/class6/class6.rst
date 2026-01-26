@@ -107,19 +107,18 @@ CASI scoring only applied to Signature attacks, not Agentic Warfare attack.
 2 - Signature Attacks Report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Select **Reports** and filter based on **complete** reports.
+Select **Reports** and select **Full Report**.
 
 ..  image:: ./_static/class6-redteam-4-01.png
-
-Click on **Run date** to sort the report and select report name **foobz-nim-meta-llama3** report.
-
-..  image:: ./_static/class6-redteam-4-02.png       
+    
 
 Report dashboard shown respective information about the scanned result.
 
-Report of an Attack Campaign. Click **View raw data** to see more details of every prompt used in the attack campaign.
+Report of an Attack Campaign. 
 
 ..  image:: ./_static/class6-redteam-4.png
+
+Click **View raw data** to see more details of every prompt used in the attack campaign.
 
 Details of the attack prompts used in the campaign including the response from the AI model, the attack type, severity level, and whether the attack was successful or not. 
 
@@ -128,15 +127,10 @@ Details of the attack prompts used in the campaign including the response from t
 3 - Agentic Warfare Report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Select **Reports** and search the following report name in the search bar and selecte the respective report.
+Select **Reports** and select **Full Report**.
 
-.. code-block:: bash
 
-   agentic-genearate-harmful-code-2
-
-..  image:: ./_static/class6-redteam-ars-01-0.png
-
-Respective information of the agentic warfare scanning displayed. Select **View agentic fingerprints**.
+Respective information of the campaign run displayed. Select **View agentic fingerprints**.
 
 ..  image:: ./_static/class6-redteam-ars-01.png
 
@@ -144,14 +138,23 @@ Feel free to explore the Red Agent chain of thought. Its the internal reasoning 
 
 In agentic AI, this covers every mental step the agent takes—from forming questions and evaluating options to deciding on an action. This process is crucial for transparency, debugging, and explainability. Technologies like Agentic Fingerprints let you see each branch or step an agent considered, providing a clear decision tree of its entire thought process leading to a final result
 
-.. Note:: 
-  The scenario was intentionally crafted to request Python exploit code for CVE-2025-20333 as part of a **sanctioned security validation**. The objective was to **ensure AI models and applications are resilient and will not generate malicious code**.
 
 ..  image:: ./_static/class6-redteam-ars-02.png
 
-Another example Agentic Warfare scanning with slight different intent.
+Another example Agentic Warfare scanning with a different attack technique.
 
 ..  image:: ./_static/class6-redteam-ars-03.png
+
+
+4 - Continious AI Assurance with F5 AI Red Team
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a demo video on how you can integrate F5 AI Red Team into your CI/CD pipeline to continuously test and validate your AI models or AI/Agentic Apps as part of your development workflow.
+
+.. raw:: html
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/Gnid-m-WoCQ?si=1t35lXIcBIgzC4jG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 |
