@@ -333,13 +333,7 @@ Search for keyword **openai** and select **OpenAI Embeddings Custom**
 
 ..  image:: ./_static/class3-doc-store-08.png
 
-Select **azure-open-ai** for the OpenAI API Key.
-
-.. NOTE:: 
-
-   **azure-open-ai** is a pre-configured secret that store the API key credential to access Azure OpenAI endpoint. This endpoint will be use for **model embedding** and **model inference**
-
-   ..  image:: ./_static/class3-doc-store-08-1.png
+Select **azure-open-ai** in **Connect Credential** to use OpenAI API key.
 
 
 For **BasePath**, input the following URL
@@ -358,6 +352,15 @@ For **Model Name**, input the following model
 
 
 ..  image:: ./_static/class3-doc-store-09.png
+
+|
+
+.. NOTE:: 
+
+   **azure-open-ai** OpenAI API key is a pre-configured secret that store the API key credential to access Azure OpenAI endpoint. This endpoint will be use for **model embedding** and **model inference**
+
+   ..  image:: ./_static/class3-doc-store-08-1.png
+
 
 
 Click on **Select Vector Store**.
