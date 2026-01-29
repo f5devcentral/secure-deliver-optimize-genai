@@ -839,6 +839,14 @@ Update F5 AI Guardrails policy to redact PII data.
 
 Go to **Scanners**. We are going to import a scanner package called **Corporate guardrails package** to redact PII data. It is a custom build scanner package provided for this class. Its not part of the in-built scanner packages.
 
+.. Attention:: 
+
+   The **corporate guardrails package** file located in the Windows Jumphost in the Documents folder as well as the KASM desktop for your reference. Alternatively you can download it from the link below if you are doing it from an environment that do not have access to the file.
+
+   https://github.com/f5devcentral/secure-deliver-optimize-genai/raw/refs/heads/main/artifacts/calypsoai-scanners-export-2026-01-24T06_09_32.521Z.zip
+
+
+
 .. image:: ./_static/class5-oob-corp-scan-01.png
 
 
