@@ -352,7 +352,7 @@ Ensure you enable **Prompt injection package** and **Restricted topics package**
 
 
 Guardrails
-~~~~~~~~
+~~~~~~~~~~
 
 Click **Guardrails** to go to guardrails screen.
 
