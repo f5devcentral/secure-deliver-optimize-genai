@@ -525,6 +525,13 @@ Click **Publish** to publish the custom guardrail policy.
 
 Select **Allow opt in** to allow the custom guardrail policy to be opt in. Opt in does not enable the guardrail. This allow the project admins to update the project with the new guardrail themselves, at their preferred time, ensuring uninteruppted service in case of problems with the new guardrail version
 
+
+.. NOTE::
+
+   Depends on project configuration situation, **Allow opt in** may not shown as shown below. Proceed if it doesn't.
+
+
+
 ..  image:: ./_static/class5-custom-policy-7.png
 
 ..  image:: ./_static/class5-custom-policy-7-1.png
